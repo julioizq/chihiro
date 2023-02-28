@@ -1,0 +1,790 @@
+*{
+    
+    box-sizing: border-box;
+}
+body{
+ font-family: 'Cormorant Garamond' !important;    
+ font-weight: 400 !important;
+ font-size: 19px !important;
+ margin: 0%;
+}
+.centrado{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.clear{
+    clear: both;
+}
+img{
+    display: block;
+    width: 100%;
+    margin: 0%;
+}
+#flecha-arriba{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    z-index: 30000000;
+    transition: all ease 0.5s;
+    font-size: 60px;
+    color: #ffffff80;
+}
+#flecha-arriba:hover{
+    color: #ffffff;
+}
+#cabecera{
+    background-image: url(../img/fondo1.jpg);
+    background-attachment: fixed;
+    background-position: center top;  
+    background-size: cover;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    position: relative;
+
+}
+#logo{
+    width: 600px;
+    margin: auto;
+    padding-top: 28vh;
+    padding-bottom: 20vh;
+}
+#flechita{
+text-align: center;
+}
+.flecha-click{
+    font-size: 60px;
+    color: rgb(207, 109, 102);
+    transition: all ease 0.2s;
+}
+.flecha-click:hover{
+    color: rgb(167, 75, 72);
+}
+#menu-grande{
+    display: block;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 100000;
+}
+.fixed {
+    background-color: rgba(0, 0, 0, 0.432);
+    position: fixed !important;
+    top: 0%;
+}
+#menu-grande ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+}
+#menu-grande ul li a{
+    font-family: 'Aboreto';
+    width: 20%;
+    height: 40px;
+    color: white;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all ease 1s;
+
+}
+#menu-grande ul li a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.boton-logo:hover{
+    filter: invert(1);
+    background-color: black !important;
+}
+#logo-menu{
+    width: 170px;
+    margin: auto;
+    margin-top: 6px;
+}
+#menu-pequeno{
+    z-index: 999999;
+    position: fixed;
+    display: none;
+    height: 40px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+#menu-pequeno ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+}
+#menu-pequeno ul li a{
+    font-family: 'Aboreto';
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+.alto{
+    height: 200px !important;
+}
+main{
+    background-image: url(../img/fondo7.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2{
+    font-family: 'Aboreto' !important;
+    font-size: 50px !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    nav ul li a{
+        font-size: 15px;
+    }
+    #logo{
+        width: 400px;
+        padding-bottom: 30vh;
+    }
+    .boton-logo{
+        display: none;
+     }
+     #menu-grande ul li a{
+        width: 25%;
+    }
+    .centrado{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    header{
+        height: 100vh !important;
+    }
+    #logo{
+        padding-bottom: 36vh;
+    }
+    #menu-grande{
+        display: none;
+    }
+    #menu-pequeno{
+        display: block;
+    }
+    .centrado{
+        width: 95%;
+    }
+}
+/*INICIO*/
+
+.bloque-uno{
+    padding-top: 80px;
+    padding-bottom: 10 px;
+    color: white;
+}
+p{
+    margin: 0px !important;
+}
+.titular-uno{
+    margin-top: 0px !important;
+    margin-bottom: 60px;
+}
+
+/*LIGHTBOX*/
+
+.container.gallery-container {
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(124, 23, 73, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+/* FIN DE LIGHTBOX*/
+
+
+/*ANIVERSARIO*/
+
+#head-aniversario{
+    background-image: url(../img/fondo5.jpg);
+    background-attachment: fixed;
+    background-position: center top;  
+    background-size: cover;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    position: relative;
+}
+#contenido-aniversario{
+    background-image: url(../img/fondo4.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+/*GALERIA ANIVERSARIO*/
+
+#galeria-aniversario {
+    height: 1000px;
+    overflow:auto;
+    margin-bottom: 100px;
+    
+}
+.scroll-animations-example > .scrollsection {
+    padding: 2vh 10px 2vh 10vmax;
+    min-width: 550vh;
+
+}
+.scroll-animations-example > .scrollsection > .item {
+    display: inline-block;
+    position: relative;
+    margin: 0 -30vh 0 3vh;
+}
+.scroll-animations-example > .scrollsection > .item::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.scroll-animations-example > .scrollsection > .item.-big {
+    height: 80vh;
+    width: 60vh;
+}
+.scroll-animations-example > .scrollsection > .item.-big.-horizontal {
+    height: 60vh;
+    width: 80vh;
+}
+.scroll-animations-example > .scrollsection > .item.-normal {
+    height: 60vh;
+    width: 45vh;
+    z-index: 1;
+}
+.scroll-animations-example > .scrollsection > .item.-normal.-horizontal {
+    height: 45vh;
+    width: 60vh;
+}
+.scroll-animations-example > .scrollsection > .item.-normal:nth-of-type(3n) {
+    bottom: 5vh;
+}
+.scroll-animations-example > .scrollsection > .item.-normal:nth-of-type(4n) {
+    bottom: -5vh;
+}
+.scroll-animations-example > .scrollsection > .item.-small {
+    height: 40vh;
+    width: 30vh;
+    z-index: 2;
+}
+.scroll-animations-example > .scrollsection > .item.-small.-horizontal {
+    height: 30vh;
+    width: 40vh;
+}
+.scroll-animations-example > .scrollsection > .item.-small:nth-of-type(3n) {
+    bottom: 13vh;
+}
+.scroll-animations-example > .scrollsection > .item.-small:nth-of-type(4n) {
+    bottom: -13vh;
+}
+.scroll-animations-example > .scrollsection > .item > .image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(0) translateY(0) scale(1);
+    transition: filter .3s ease, opacity 1s ease, transform 1s ease;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n) > .image {
+    transform: translateX(-30vh) translateY(-30vh) scale(.8);
+    transition-delay: 0;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 1) > .image {
+    transform: translateX(30vh) translateY(30vh) scale(.8);
+    transition-delay: .05s;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 2) > .image {
+    transform: translateX(-30vh) translateY(30vh) scale(.8);
+    transition-delay: .1s;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 3) > .image {
+    transform: translateX(-30vh) translateY(-30vh) scale(.8);
+    transition-delay: .15s;
+}
+.scroll-animations-example > .scrollsection > .item > .image.-active {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: .8;
+    pointer-events: auto;
+    transition: filter .3s ease, opacity 1s ease, transform 1s ease;
+}
+.scroll-animations-example > .scrollsection > .item > .image.-clicked {
+    transform: translateX(0) translateY(0) scale(5);
+    opacity: 0;
+    pointer-events: auto;
+    transition: filter .3s ease, opacity 1s ease, transform 1s ease;
+}
+.scroll-animations-example > .scrollsection > .item > .image.-active:hover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(0);
+    opacity: 1;
+    cursor: pointer;
+}
+
+#texto-aniversario{
+    width: 48%;
+    float: right;
+    color: white;
+    padding-bottom: 80px;
+}
+/*FIN GALERIA ANIVERSARIO*/
+
+/*FLIPBOX ANIVERSARIO*/
+
+/*
+* This is the outer area
+*/
+
+
+#flipbox-aniversario{
+    width: 48%;
+    float: right;
+}
+.canvas {
+    height: 455px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /*
+  * The Flipbox CSS you will need
+  */
+  .flipbox {
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .flipbox > label > input[type='checkbox'] {
+    display: none;
+  }
+  
+  .flipbox .flipbox-content {
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 2px 42px rgba(0,0,0,0.25);
+    width: 360px;
+    height: 420px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipbox:hover .flipbox-content {
+    transform: rotateY(180deg);
+  }
+  .flipbox.flipbox-vertical:hover .flipbox-content {
+    transform: rotateX(180deg);
+  }
+  
+  
+  
+  .flipbox .flipbox-content .flipbox-front,
+  .flipbox .flipbox-content .flipbox-rear {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  .flipbox .flipbox-content .flipbox-front {
+    background-color: #fff;
+  }
+  
+  .flipbox .flipbox-content .flipbox-rear {
+    background-color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  
+  /* Toggle Flipbox */
+  .flipbox.flipbox-toggle label input:checked + .flipbox-content {
+    transform: rotateY(180deg);
+  }
+  
+  .flipbox.flipbox-toggle.flipbox-vertical label input:checked + .flipbox-content {
+    transform: rotateX(180deg);
+  }
+  
+  
+  /*  */
+  .flipbox.flipbox-vertical:hover .flipbox-content {
+    transform: rotateX(180deg);
+  }
+  .flipbox.flipbox-vertical .flipbox-content .flipbox-rear {
+    transform: rotateX(180deg);
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*
+  * Just some extra styling
+  */
+  .house-card {
+    background-image: url(../img/20aniversario/2.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    font-family: 'Cinzel', serif;
+    
+    overflow: hidden;
+  }
+  
+  .house-card::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-image: url(#);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center bottom 20px;
+  }
+  
+  .house-card::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-image: url(#);
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+  }
+  
+  
+  
+  
+  .house-card .house-card-inner {
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+    padding-top: 60px;
+    text-align: center;
+    
+  }
+  .house-card h3 {
+    margin: 0;
+    font-size: 27px;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.25), 0 2px 21px rgba(0,0,0,0.25);
+  }
+  
+  
+  /* House Lannister */
+  .house-card.house-lannister h3  {
+    color: #ffd968;
+  }
+  /* House Stark */
+  
+  .house-card.house-stark {
+    background-image: url(../img/20aniversario/4.jpg);
+    background-size: cover;
+    background-position: top center;
+
+  }
+  .house-card.house-stark::before {
+    background-image: url(#);
+    background-position: center bottom 80px;
+  }
+  .house-card.house-stark::after {
+    background-image: url(#);
+    opacity: 0.7;
+  }
+  
+
+/*FIN FLIPBOX ANIVERSARIO*/
+
+@media screen and (max-width: 1200px){
+#texto-aniversario{
+    float: none;
+    width: 100%;
+}
+#flipbox-aniversario{
+    width: 100%;
+    float: none;
+    margin-bottom: 80px;
+}
+}
+
+/*GHIBLI*/
+
+#head-ghibli{
+    background-image: url(../img/fondo8.jpg);
+    background-attachment: fixed;
+    background-position: center top;  
+    background-size: cover;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    position: relative;
+}
+#logo-ghibli{
+    width: 700px;
+    margin: auto;
+    padding-top: 20vh;
+    padding-bottom: 26vh;
+    filter: invert(1);
+}
+#contenido-ghibli{
+    background-image: url(../img/fondo3.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white !important;
+    padding-bottom: 80px;
+}
+
+/*SLIDER GHIBLI*/
+
+#slider-ghibli {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    margin: auto;
+}
+.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.container .card {
+    width: 31.33%;
+    height: 430px;
+    margin-right: 2%;
+    float: left;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgba(255, 255, 255, 0.233)
+}
+.container .card:hover {
+    top: -15px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container .card h4 {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.container .card p {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.container .card a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #55042a;
+}
+
+
+/*FIN SLIDER GHIBLI*/
+
+#texto-ghibli{
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+#slider-dos-ghibli{
+    margin-bottom: 100px;
+}
+#texto-ghibli-dos{
+    width: 48%;
+    float: left;
+}
+.imagen-ghibli{
+    width: 48%;
+    float: right;
+}
+@media screen and (max-width: 1200px){
+    .container{
+    padding-bottom: 10px;
+    }
+    #logo-ghibli{
+        width: 400px;
+        padding-bottom: 40vh;
+    }
+    #texto-ghibli-dos{
+        width: 100%;
+        float: none;
+        margin-bottom: 50px;
+        padding-top: 10px;
+    }
+    .imagen-ghibli{
+        width: 100%;
+        float: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container .card{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/*PERSONAJES*/
+#cabecera-personajes{
+    background-image: url(../img/fondo6.jpg);
+    background-attachment: fixed;
+    background-position: center top;  
+    background-size: cover;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+/*GALERIA PERSONAJES*/
+
+#galeria-personajes{
+    width: 100%;
+    height: 100%;
+    background-color: #55042a75;
+  }
+  
+  .container{
+    width: 100%;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+ }
+    
+    .item:hover{
+      flex: 7;
+    }
+ 
+  
+  .item-1 { 
+    background-image: url('../img/personajes/1.jpg');
+  }
+  
+  .item-2 { 
+    background-image: url('../img/personajes/2.jpg');
+  }
+  
+  .item-3 { 
+    background-image: url('../img/personajes/3.jpg');
+  }
+  
+  .item-4 { 
+    background-image: url('../img/personajes/4.jpg');
+  }
+  
+  .item-5 { 
+    background-image: url('../img/personajes/5.jpg');
+  }
+  
+  /*FIN GALERIA PERSONAJES*/
+
+  .nombre-personaje{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .contenido-personajes{
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
