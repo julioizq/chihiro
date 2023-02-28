@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="js/jquery-3.6.2.js"></script>
+    <script src="js/menu-pegajoso.js"></script>
+
+    <script src="https://kit.fontawesome.com/53728ce9ab.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="menu-pequeno">
+        <ul>
+            <li><a href="#" id="barras"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="index.html" class="eti">INICIO</a></li>
+            <li><a href="aniversario.html" class="eti">20 ANIVERSARIO</a></li>
+            <li><a href="ghibli.html" class="eti">EL ESTUDIO GHIBLI</a></li>
+            <li><a href="personajes.html" class="eti">PERSONAJES</a></li>
+        </ul>
+    </nav>
+    <header id="head-ghibli">
+        <img id="logo-ghibli" src="img/logo-ghibli.png" alt="">
+        <div id="flechita"><a href="#contenido" class="flecha-click"><i class="fa-solid fa-circle-arrow-down"></i></a>
+        </div>
+    </header>
+    <nav id="menu-grande">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="aniversario.html">20 ANIVERSARIO</a></li>
+            <li><a href="#head-aniversario" class="boton-logo"><img src="img/logo-menu.png" alt="" id="logo-menu"></a>
+            </li>
+            <li><a href="ghibli.html">EL ESTUDIO GHIBLI</a></li>
+            <li><a href="personajes.html">PERSONAJES</a></li>
+        </ul>
+    </nav>
+    <div class="clear"></div>
+
+    <main id="contenido-ghibli">
+
+        <div id="slider-ghibli">
+            <div class="centrado">
+                <div class="container">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/category/nature/330x200">
+                        <h4>Nature</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias facere.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://source.unsplash.com/category/food/330x200">
+                        <h4>Food</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias facere.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://source.unsplash.com/category/buildings/330x200">
+                        <h4>Buildings</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias facere.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+
+        <div id="texto-ghibli">
+            <div class="centrado">
+                <h2>LOREM IPSUM</h2>
+                <p>Quae nemo enim quis id ducimus minima beatae delectus atque expedita, porro culpa ab vel animi
+                    deleniti suscipit doloribus? Similique culpa dolorum quasi hic modi dignissimos cumque dicta ullam
+                    sed!</p>
+                <p>Magni ipsa accusantium soluta. Eligendi adipisci accusamus itaque delectus amet at nostrum autem,
+                    voluptatibus, modi quod atque possimus repudiandae et harum dolores facilis alias aspernatur facere
+                    explicabo dicta ipsam! Aliquam?</p>
+                <p>Dignissimos ea rerum, quaerat doloremque eveniet a aliquid eos eaque praesentium nihil adipisci nam?
+                    Amet, ducimus. Dignissimos sequi culpa beatae nihil eaque fugiat assumenda delectus, deserunt esse.
+                    Porro, libero cum?</p>
+                <p>Voluptatem quisquam non repellat ex iusto porro asperiores nam ipsa rem voluptatibus, id debitis
+                    veritatis dolores iste perferendis aperiam? Expedita possimus minus qui necessitatibus sit dolores
+                    quis vitae odit ratione.</p>
+                <p>Fugiat, hic impedit nobis commodi facere quae explicabo suscipit molestiae assumenda esse quaerat.
+                    Quibusdam tempora consequatur numquam eius at vero. Odio optio quaerat harum debitis eum beatae
+                    itaque eveniet vel.</p>
+                <p>Quis mollitia animi est accusamus aperiam! Dolore, deleniti qui? Eveniet saepe doloribus culpa
+                    praesentium dolores quia, obcaecati distinctio quisquam fuga qui alias modi sunt pariatur esse!
+                    Maxime aut incidunt exercitationem?</p>
+                <p>Provident fugiat officia quod repellendus molestias quibusdam mollitia facere tempora, dolor magni
+                    nostrum beatae atque? Minima, excepturi at harum architecto eaque, nulla quod, tenetur sit eligendi
+                    animi aperiam iure tempore.</p>
+            </div>
+        </div>
+
+        <div id="slider-dos-ghibli">
+
+        </div>
+
+    </main>
+    <footer></footer>
+    <script src="js/toggle.js"></script>
+    <script src="js/anclajes-animados.js"></script>
+
+
+</body>
+
+</html>
